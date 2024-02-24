@@ -5,7 +5,6 @@
 /index.zip
 /.pnp
 .pnp.js
-.env
 # testing
 /coverage
 
