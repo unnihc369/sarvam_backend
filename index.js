@@ -33,7 +33,10 @@ mongoose
   .then(() => app.listen(PORT, () => console.log(`Listening at Port ${PORT}`)))
   .catch((error) => console.log(`${error} did not connect`));
 
-
+app.get('/', (req, res) => {
+  // Send a response back to the client
+  res.send('Hello, world!');
+});
 app.use('/auth', AuthRoute);
 app.use('/user', UserRoute)
 app.use('/posts', PostRoute)
